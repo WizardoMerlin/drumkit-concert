@@ -1,0 +1,119 @@
+html {
+    font-size: 10px;
+    background: url('./background.jpg') bottom center;
+    background-size: cover;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.2);
+    border-color: #fa0606;
+    box-shadow: 0 0 5rem #ffc400;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #cbcbcc;
+  }
+
+  #guitar {
+    position: absolute;
+    right: 30%;
+    bottom: 30%;
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 30rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+
+  #bass {
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 30rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+
+  #rumble {
+    position: absolute;   
+    bottom: 15%;
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 40rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+
+  #rumble.playing {
+    transform: scale(1.2);
+    border-color: #fa0606;
+    box-shadow: 0 0 2rem #ffc400;
+  }
+
+  #guitar.playing {
+    transform: scale(0.5rem);
+    border-color: #fa0606;
+    box-shadow: 0 0 2rem #ffc400;
+  }
+
+  #bass.playing {
+    transform: scale(0.5rem);
+    border-color: #fa0606;
+    box-shadow: 0 0 2rem #ffc400;
+  }
